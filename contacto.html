@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto | NutriVida</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">NutriVida</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Contacto</h1>
+            <p>Si prefieres, escríbenos directamente o visítanos en Temuco.</p>
+
+            <p><strong>Teléfono:</strong> +56 45 234 5678</p>
+            <p><strong>Correo:</strong> contacto@nutrivida.cl</p>
+            <p><strong>Dirección:</strong> Av. Alemania 1234, Temuco</p>
+            <p><strong>Horario:</strong> Lunes a sábado, según disponibilidad</p>
+        </section>
+
+        <section>
+            <h2>Envíanos un mensaje</h2>
+
+            <form id="form-contacto" novalidate>
+
+                <p id="confirmacion-contacto" role="status"></p>
+
+                <div>
+                    <label for="nombre-contacto">Nombre</label><br>
+                    <input type="text" id="nombre-contacto" name="nombre">
+                    <small id="error-nombre-contacto" class="error"></small>
+                </div>
+
+                <div>
+                    <label for="correo-contacto">Correo electrónico</label><br>
+                    <input type="email" id="correo-contacto" name="correo">
+                    <small id="error-correo-contacto" class="error"></small>
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje</label><br>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                    <small id="error-mensaje" class="error"></small>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 NutriVida. Todos los derechos reservados.</p>
+        <nav>
+            <a href="contacto.html">Contacto</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </nav>
+    </footer>
+
+    <script src="Script.js" defer></script>
+</body>
+</html>
